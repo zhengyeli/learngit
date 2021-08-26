@@ -48,7 +48,8 @@ int *func2(){
     printf("2\n");
 }
 
-void main(){
+void main(int argc, char **str)
+{
 
 data[0] = 1;
 data[1] = 1;
@@ -67,8 +68,12 @@ int i = 0;
     }
 }*/
 
-handle1 = func1;
-handle2 = func2;
+// handle1 = func1;
+// handle2 = func2;
+// char **str = {"adahdoia""14325432"};
+
+printf("%s",str[0]);
+printf("%d",str[1][1] - '0');
 
 }
 
