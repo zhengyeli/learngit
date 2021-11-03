@@ -96,6 +96,10 @@ printf("result is %x\n",sum1);
 printf("result is %d",sum1);
 
 int c;
+int d;
+int e;
+printf("result is %d",sum1);
+int f;
 }
 
 
