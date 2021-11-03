@@ -1,0 +1,1 @@
+char Govee_Utils_GetBccCode1(char *data, char len);
