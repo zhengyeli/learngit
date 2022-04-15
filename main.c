@@ -60,20 +60,17 @@ data[4] = 0;
 data[5] = 0;
 
 //data[19] = Govee_Utils_GetBccCode1(data, 19);
-#if 0
+#if 1
 _mystruct mystruct;
 mystruct.rezerved = 0;
 mystruct.customLed = 0;
-mystruct.wifiLed = 0x02;
+mystruct.wifiLed = 0x01;
 mystruct.autoScrOff = 1;
 printf("value is %d\n", mystruct);
-printf("sizeof(mystruct) is %d\n", sizeof(mystruct));
-printf("sizeof(_mystruct) is %d\n", sizeof(_mystruct));
+printf("sizeof(mystruct) is %ld\n", sizeof(mystruct));
+printf("sizeof(_mystruct) is %ld\n", sizeof(_mystruct));
 printf("wifiled is %d\n", mystruct.wifiLed);
 
-printf("result value is %d\n", result);
-printf("sizeof(mystruct) is %d\n", sizeof(result));
-printf("sizeof(_mystruct) is %d\n", sizeof(result));
 #endif
 
 
@@ -103,3 +100,15 @@ int f;
 }
 
 
+
+#include <stdio.h>
+int main()
+{
+ 
+	int b=3;
+	int arr[]={6,7,8,9,10};
+	int *p=arr;
+	*(p++)+=123;  //*p=*p+123=arr[0]=129
+	printf("%d,%d\n",*p,*(++p));  //8,8
+	return 0;
+}
