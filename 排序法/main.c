@@ -141,5 +141,11 @@ int main()
     MySort_Insert_Handle(in, out, sizeof(in));
     // Log_print_us("out");
     MyArrayPrint(out, sizeof(in));
+
+unsigned char i ;
+for (i=9;i>=0;i--)
+{
+printf("%u\n",i);
+}
 	return 0;
 }
